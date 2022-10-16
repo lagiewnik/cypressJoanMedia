@@ -1,0 +1,22 @@
+{
+  "name": "cypress_joanmedia",
+  "version": "1.0.0",
+  "description": "kurs: https://www.youtube.com/playlist?list=PLYDwWPRvXB8-8LG2hZv25HO6C3w_vezZb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lagiewnik/cypressJoanMedia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lagiewnik/cypressJoanMedia/issues"
+  },
+  "homepage": "https://github.com/lagiewnik/cypressJoanMedia#readme",
+  "dependencies": {
+    "cypress": "^10.10.0"
+  }
+}
