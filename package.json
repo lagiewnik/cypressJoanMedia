@@ -4,7 +4,10 @@
   "description": "kurs: https://www.youtube.com/playlist?list=PLYDwWPRvXB8-8LG2hZv25HO6C3w_vezZb",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:runDefault": "cypress run --spec cypress/e2e/TC*cy.js",
+    "cypress:runChrome": "cypress run --browser chrome --spec cypress/e2e/TC*cy.js"
   },
   "repository": {
     "type": "git",
