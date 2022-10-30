@@ -4,4 +4,5 @@ class inventoryPage {
     }
 }
 
-module.exports = new inventoryPage()
+//module.exports = new inventoryPage()
+export default new inventoryPage()
