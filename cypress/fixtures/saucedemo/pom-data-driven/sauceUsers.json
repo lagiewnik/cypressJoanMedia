@@ -1,0 +1,27 @@
+[
+    {
+        "itName": "should login corectly to inventory page",
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "expected": "Products"
+    },
+    {
+        "itName": "should display locked out message",
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "expected": "Epic sadface: Sorry, this user has been locked out."
+    },
+    {
+        "itName": "should display message for incorect username",
+        "username": "notexist_user123",
+        "password": "secret_sauce",
+        "expected": "Epic sadface: Username and password do not match any user in this service"
+    },
+    {
+        "itName": "should display message for incorect password",
+        "username": "standard_user",
+        "password": "not_valid",
+        "expected": "Epic sadface: Username and password do not match any user in this service"
+    }
+]
+
