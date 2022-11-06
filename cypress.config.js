@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "bgkyxs",
   "chromeWebSecurity": false,
   "experimentalStudio": true,
   e2e: {
