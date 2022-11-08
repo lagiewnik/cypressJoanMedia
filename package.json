@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "cypress:runDefault": "cypress run --spec cypress/e2e/TC*cy.js",
+    "cypress:runPom": "cypress run --spec cypress/e2e/pom/TC*cy.js",
     "cypress:runChrome": "cypress run --browser chrome --spec cypress/e2e/TC*cy.js",
-    "cypress:dashboard" :"cypress run --browser chrome --record --key 0c2d15e6-a689-4912-9d19-40dafbb50706 --spec cypress/e2e/pom/TC*cy.js" 
+    "cypress:dashboard": "cypress run --browser chrome --record --key 0c2d15e6-a689-4912-9d19-40dafbb50706 --spec cypress/e2e/pom/TC*cy.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/lagiewnik/cypressJoanMedia#readme",
   "dependencies": {
     "cypress": "^10.10.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.2.3"
   }
 }
