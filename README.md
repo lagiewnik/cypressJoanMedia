@@ -22,3 +22,10 @@ todos aplication for API testing from: https://github.com/cypress-io/testing-wor
     docker run -it -v "C:\D\tutoriale\cypressJoanMedia":/e2e -w /e2e cypress/included:10.10.0 --spec cypress/e2e/pom/*cy.js --browser chrome
 
 Wyłaczyć wczesniej mochawesome reports!
+
+## TAGS
+    https://github.com/cypress-io/cypress/tree/develop/npm/grep
+    
+    npm i -D @cypress/grep
+
+    npx cypress run --env grepTags=@sanityTag
