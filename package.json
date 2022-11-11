@@ -8,7 +8,8 @@
     "cypress:open": "cypress open",
     "cypress:runDefault": "cypress run --spec cypress/e2e/TC*cy.js",
     "cypress:runPom": "cypress run --spec cypress/e2e/pom/TC*cy.js",
-    "cypress:runChrome": "cypress run --browser chrome --spec cypress/e2e/TC*cy.js",
+    "cypress:runChrome": "cypress run --browser chrome --spec cypress/e2e/pom/TC*cy.js",
+    "cypress:runFirefox": "cypress run --browser firefox --spec cypress/e2e/pom/TC*cy.js",
     "cypress:dashboard": "cypress run --browser chrome --record --key 0c2d15e6-a689-4912-9d19-40dafbb50706 --spec cypress/e2e/pom/TC*cy.js"
   },
   "repository": {
