@@ -29,3 +29,6 @@ Wyłaczyć wczesniej mochawesome reports!
     npm i -D @cypress/grep
 
     npx cypress run --env grepTags=@sanityTag
+
+## Docker build your own image from Dockerfile
+    docker build -t cypress-image:1.0.0 .
