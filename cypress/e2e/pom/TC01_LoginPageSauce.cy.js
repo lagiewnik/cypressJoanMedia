@@ -38,7 +38,7 @@ describe("POM Sauce Page tests implementation", ()=>{
         homeSaucePage.typePassword('fake');
         homeSaucePage.loginButtonClick();
     
-        homeSaucePage.elements.eerorMessage().should('contain',"%%Epic sadface: Username and password do not match any user in this service")
+        homeSaucePage.elements.eerorMessage().should('contain',"Epic sadface: Username and password do not match any user in this service")
     
     })
 })
