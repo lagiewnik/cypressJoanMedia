@@ -14,12 +14,12 @@ pipeline{
         stage('Deploying'){
             steps{
                 echo "Building application"
-                script{
-                    withCredentials([string(credentialsId: 'telegramToken', variable: 'TOKEN'),
-                    string(credentialsId: 'telegramChatId', variable: 'CHAT_ID')]) {
-                        telegramSend(messsage:'test message',chatId:${CHAT_ID})
-                        }
-                    }
+                // script{
+                //     withCredentials([string(credentialsId: 'telegramToken', variable: 'TOKEN'), string(credentialsId: 'telegramChatId', variable: 'CHAT_ID')]){
+                //         telegramSend(messsage:'test message',chatId:${CHAT_ID})
+                //         }
+                //     }
+                telegramSend(message: 'Hello World', chatId: 351242908)
 
             }
             
