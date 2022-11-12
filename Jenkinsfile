@@ -2,8 +2,8 @@ pipeline{
     agent any
     
     parameters{
-        string(name:"SPEC", defaultValue:"cypress/e2e/pom/**", description: "Enter mask for scenarios file location");
-        choice(name: "BROWSER", choices: ['chrome','firefox','edge'], description: "Browser name" )
+        string(name:'SPEC', defaultValue:'cypress/e2e/pom/**', description:'Enter mask for scenarios file location');
+        choice(name:'BROWSER', choices: ['chrome','firefox','edge'], description:'Browser name')
     }
 
     options{
