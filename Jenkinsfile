@@ -30,6 +30,7 @@ pipeline{
                 echo "Deploying the application"
             }
         }
+    }
 
         post{
             steps{
@@ -37,4 +38,3 @@ pipeline{
             }
         }
     }
-}
