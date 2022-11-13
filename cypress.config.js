@@ -13,6 +13,10 @@ module.exports = defineConfig({
     inlineAssets: true,
     saveAllAttempts: false,
   },
+  env: {
+    //externalAPI: 'https://jsonplaceholder.cypress.io/' //
+    externalAPI: 'https://jsonplaceholder.typicode.com/'
+  },
   e2e: {
     baseUrl:"http://localhost:3000",
     setupNodeEvents(on, config) {

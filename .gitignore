@@ -5,4 +5,6 @@ package-lock.json
 cypress/videos/TC01_test_structure.cy.js.mp4
 cypress/videos/TC02_hooks.cy.js.mp4
 cypress/videos/TC03_retry-ability.cy.js.mp4
-cypress/screenshots/TC01_test_structure.cy.js/Unit testing of our dummy application -- Math with DECIMAL numbers -- should multiply DECIMAL numvbers (failed).png
+cypress/screenshots/*
+cypress/videos/*
+cypress/reports/**

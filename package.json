@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
+    "cypress:extAPI": "cypress run --spec cypress/e2e/API/externalAPI*cy.js --env externalAPI=https://jsonplaceholder.cypress.io/",
+    "cypress:open:3333": "cypress open --config baseUrl=http://localhost:3333",
     "cypress:runDefault": "cypress run --spec cypress/e2e/TC*cy.js",
     "cypress:runPom": "cypress run --spec cypress/e2e/pom/TC*cy.js",
     "cypress:API": "cypress run --spec cypress/e2e/API/*cy.js",

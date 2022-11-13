@@ -21,7 +21,7 @@ context('API Intercept spy demo', () => {
     });
    
     after(function() {
-        cy.request('DELETE',`http://localhost:3000/todos/${this.todoIdtoDelete}` )
+        cy.request('DELETE',`/todos/${this.todoIdtoDelete}` )
         cy.reload();
     });
 });
