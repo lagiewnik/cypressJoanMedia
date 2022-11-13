@@ -19,8 +19,6 @@ pipeline{
                 //         telegramSend(messsage:'test message',chatId:${CHAT_ID})
                 //         }
                 //     }
-                telegramSend(message: 'Hello World', chatId: 351242908)
-                emailext body: 'qwerqwe', subject: 'test', to: 'marsen1@o2.pl'
             }
             
         }

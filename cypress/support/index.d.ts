@@ -15,5 +15,12 @@ declare namespace Cypress {
        * cy.logout( )
        */
         logout(): Chainable<any>
+
+        /**
+       * Reset db file of todos app to initial values (specified in the fixtures file) 
+       * @example
+       * cy.resetTodosDb( )
+       */
+         resetTodosDb(): Chainable<any>
     }
   }

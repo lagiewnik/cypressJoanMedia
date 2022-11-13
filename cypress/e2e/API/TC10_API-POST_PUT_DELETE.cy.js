@@ -1,5 +1,9 @@
 context('POST PUT DELETE - API demo', () => {
-    const endpoint = 'http://localhost:3000/todos'
+    before(() => {
+        cy.resetTodosDb()
+    });
+    
+    const endpoint = '/todos'
 
     const todoObject = {
         "title": "Adding new todos",

@@ -1,0 +1,20 @@
+{
+    "todos": [
+        {
+            "title": "pizza cooking",
+            "completed": false,
+            "id": "4081646897"
+        },
+        {
+            "title": "bicycle repair",
+            "completed": false,
+            "id": "8257640358"
+        }
+    ],
+    "accounts": [
+        {
+          "email": "mariano@o2.pl",
+          "password": "ausdhnbll"
+        }
+      ]
+}

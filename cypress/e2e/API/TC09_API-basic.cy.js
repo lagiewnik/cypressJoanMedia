@@ -1,8 +1,10 @@
 context('BASIC API demo', () => {
-    const URL = 'http://localhost:3000/todos'
+   
+    const urlTodos = "/todos";
 
     beforeEach(function() {
-        cy.request('GET',URL).as('todosResp')
+        cy.resetTodosDb()
+        cy.request('GET',urlTodos).as('todosResp')
     });
     it('Body lenght -test', function() {
         cy.get('@todosResp')
@@ -13,13 +15,13 @@ context('BASIC API demo', () => {
     
 
     it('Request Status - Test', function() {
-        cy.request(URL)
+        cy.request(urlTodos)
             .its('status')
             .should('eq',200)
     });
 
     it('Header contenttype- test', function() {
-        cy.request(URL)
+        cy.request(urlTodos)
             .its('headers')
             .its('content-type')
             .should('include', 'application/json')
@@ -28,24 +30,24 @@ context('BASIC API demo', () => {
 
     const todosItems=[
         {
-          "title": "3bet learning",
-          "completed": false,
-          "id": "4081646897"
+            "title": "pizza cooking",
+            "completed": false,
+            "id": "4081646897"
         },
         {
-          "title": "fishing",
-          "completed": false,
-          "id": "0899480369"
+            "title": "bicycle repair",
+            "completed": false,
+            "id": "8257640358"
         }
-      ]
+    ]
     it('Initial todos items - test', function() {
-        cy.request(URL)
+        cy.request(urlTodos)
             .its('body')
             .should('deep.equal',todosItems)
     });
 
     it('JSON Schema validate- test', ()=>{
-        cy.request(URL)
+        cy.request(urlTodos)
             .its('body')
             .each(value=>{
                 expect(value).to.have.all.keys('title','completed','id')

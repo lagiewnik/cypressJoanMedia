@@ -1,18 +1,21 @@
 
 describe("Intercept DEMO", ()=> {
-    const todosUrl = "http://localhost:3000";
+    
+    beforeEach(() => {
+        cy.resetTodosDb()
+    });
     it('Initial validation', () => {
        
-        cy.visit(todosUrl)
+        cy.visit("/")
         cy.get('.todo-list li')
             .should('have.length', 2)
-            .and('contain','3bet learning')
-            .and('contain', 'fishing')
+            .and('contain','pizza cooking')
+            .and('contain', 'bicycle repair')
     });
 
     it("Mocked API response", function(){
         cy.intercept('GET', '/todos', {fixture: 'intercept/todos.json'}).as('getTodos-Fixture')
-        cy.visit(todosUrl);
+        cy.visit("/");
         cy.get('.todo-list li')
             .should('have.length', 3)
             .and('contain','test')
@@ -32,7 +35,7 @@ describe("Intercept DEMO", ()=> {
             body: stubSample
         }).as('getTodos-StubBody')
 
-        cy.visit(todosUrl)
+        cy.visit("/")
         cy.get('[data-cy="item"] label').should('have.css', 'text-decoration', 'line-through solid rgb(136, 136, 136)')
 
     });
