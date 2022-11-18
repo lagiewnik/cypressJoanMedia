@@ -2,5 +2,17 @@
     "stepDefinitions": [
         "cypress/stepDefinitions/*.js",
         "cypress/e2e/cucumber/**/*.js"
-    ]
+    ],
+    {
+        "json": {
+          "enabled": true,
+          "output": "cypress/cucumber-json/"
+        }
+      }
+    // "cucumberJson": {
+    //     "generate": true,
+    //     "outputFolder": "cypress/cucumber-json",
+    //     "filePrefix": "",
+    //     "fileSuffix": ".cucumber"
+    //   }
 }

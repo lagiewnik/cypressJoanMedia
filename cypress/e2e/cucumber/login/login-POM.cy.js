@@ -10,6 +10,13 @@ When('User enter the username {string}', (username)=>{
     homeSaucePage.typeUsername(username);
 })
 
+When('User provides incorrect credencials', (table)=>{
+    table.hashes().forEach(element => {
+        homeSaucePage.typeUsername(element.username);
+        homeSaucePage.typePassword(element.password);
+    });
+})
+
 When('User enter the password {string}', (password)=> {
     homeSaucePage.typePassword(password);
 })
@@ -23,7 +30,6 @@ Then("User will be logged in", ()=>{
     inventoryPage.elements.titleSpan().should('have.text','Products')
 })
 
-Then("User will be receiving failed message", ()=>{
-    homeSaucePage.elements.eerorMessage().should('contain',"Epic sadface: Sorry, this user has been locked out.")
-
+Then("User will be receiving {string} message", (errorMessage)=>{
+    homeSaucePage.elements.eerorMessage().should('contain',errorMessage)
 })
