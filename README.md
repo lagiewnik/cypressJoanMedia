@@ -32,3 +32,7 @@ Wyłaczyć wczesniej mochawesome reports!
 
 ## Docker build your own image from Dockerfile
     docker build -t cypress-image:1.0.0 .
+
+
+## cucumber with cypress 10
+https://blog.emumba.com/getting-started-with-cypress-10-and-cucumber-6b43ff68633b

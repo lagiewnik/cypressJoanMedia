@@ -27,10 +27,14 @@
   },
   "homepage": "https://github.com/lagiewnik/cypressJoanMedia#readme",
   "dependencies": {
-    "cypress": "^10.10.0"
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
+    "cypress": "^10.11.0",
+    "esbuild": "^0.15.14"
   },
   "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@cypress/grep": "^3.1.0",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
     "cypress-grep": "^3.0.4",
     "cypress-mochawesome-reporter": "^3.2.3"
   }
