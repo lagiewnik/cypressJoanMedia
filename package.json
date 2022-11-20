@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/lagiewnik/cypressJoanMedia#readme",
   "dependencies": {
+    "@applitools/eyes-cypress": "^3.27.8",
     "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
     "cypress": "^10.11.0",
     "esbuild": "^0.15.14"

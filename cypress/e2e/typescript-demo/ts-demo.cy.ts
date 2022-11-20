@@ -17,5 +17,9 @@ context('', () => {
         cy.typeLogin("standard_user", "secret_sauce")
 
         cy.url().should('eq', url)
+        /* ==== Generated with Cypress Studio ==== */
+        cy.get('.title').should('be.visible');
+        cy.get('.title').should('have.text', 'Products');
+        /* ==== End Cypress Studio ==== */
     });
 });
