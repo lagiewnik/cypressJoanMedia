@@ -36,7 +36,8 @@
     "@cypress/grep": "^3.1.0",
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
     "cypress-grep": "^3.0.4",
-    "cypress-mochawesome-reporter": "^3.2.3"
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "typescript": "^4.9.3"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": "cypress/e2e/cucumber/**/*.{js,ts}",
@@ -45,7 +46,6 @@
       "outputFolder": "cypress/cucumber-json",
       "filePrefix": "",
       "fileSuffix": ".cucumber"
-
     }
   }
 }

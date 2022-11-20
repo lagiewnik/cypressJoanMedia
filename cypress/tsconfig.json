@@ -1,13 +1,8 @@
 {
-    "compilerOptions": {
-      "allowJs": true,
-      "resolveJsonModule": true,
-      "baseUrl": "../node_modules",
-      "types": [
-        "cypress"
-      ]
-    },
-    "include": [
-      "**/*.*"
-    ]
+  "compilerOptions": {
+    "target": "ES2015",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node"]
+  },
+  "include": ["**/*.ts"]
 }

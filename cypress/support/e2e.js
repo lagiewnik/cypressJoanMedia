@@ -17,8 +17,9 @@
 import './commands';
 import './api-commands';
 import 'cypress-mochawesome-reporter/register';
-const registerCypressGrep = require('@cypress/grep');
-registerCypressGrep();
+import '@cypress/grep';
+// const registerCypressGrep = require('@cypress/grep');
+// registerCypressGrep();
 
 
 Cypress.on('uncaught:exception', (err, runnable) => {

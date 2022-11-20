@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 //Hooks are from mocha
 
 /*
