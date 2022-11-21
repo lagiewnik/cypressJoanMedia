@@ -14,6 +14,9 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+
+import '@applitools/eyes-cypress/commands'
+
 import './commands';
 import './api-commands';
 import 'cypress-mochawesome-reporter/register';

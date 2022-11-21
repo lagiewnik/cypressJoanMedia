@@ -34,3 +34,6 @@ module.exports = defineConfig({
     specPattern: ['cypress/e2e/**/*.feature', 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}' ]
   },
 });
+
+
+require('@applitools/eyes-cypress')(module);
