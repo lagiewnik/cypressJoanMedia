@@ -4,7 +4,7 @@ Feature: Login Feature
     Background: 
     Given User open the login page
     Scenario: Success login
-        When  User enter the username "standard_user"
+        When  User enter the username "standard_user1"
         And  User enter the password "secret_sauce"
         And User clicks on the login button
         Then User will be logged in

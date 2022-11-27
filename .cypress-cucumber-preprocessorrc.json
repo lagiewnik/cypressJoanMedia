@@ -1,18 +1,12 @@
 {
-    "stepDefinitions": [
-        "cypress/stepDefinitions/*.js",
-        "cypress/e2e/cucumber/**/*.js"
-    ],
-    {
-        "json": {
-          "enabled": true,
-          "output": "cypress/cucumber-json/"
-        }
-      }
-    // "cucumberJson": {
-    //     "generate": true,
-    //     "outputFolder": "cypress/cucumber-json",
-    //     "filePrefix": "",
-    //     "fileSuffix": ".cucumber"
-    //   }
+  "json": {
+    "enabled": true,
+    "formatter": "cucumber-json-formatter.exe",
+    "output": "cypress/cucumber-json/"
+  },
+  "stepDefinitions": [
+    "cypress/e2e/cucumber/login/*.js",
+    "cypress/e2e/cucumber/**/*.js",
+    "cypress/stepDefinitions/*.js"
+  ]
 }

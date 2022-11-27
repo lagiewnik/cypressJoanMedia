@@ -2,9 +2,6 @@ cypress/e2e/1-getting-started/*
 cypress/e2e/2-advanced-examples/*
 node_modules/*
 package-lock.json
-cypress/videos/TC01_test_structure.cy.js.mp4
-cypress/videos/TC02_hooks.cy.js.mp4
-cypress/videos/TC03_retry-ability.cy.js.mp4
 cypress/screenshots/*
 cypress/videos/*
 cypress/reports/**
