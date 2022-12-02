@@ -22,14 +22,26 @@ context('Traversal demo', () => {
             .eq(1).should('contain', 'siamese')
     });
 
-    it('.filter()', () => {
+    it.only('.filter()', () => {
         cy.get('.traversal-nav>li')
             .filter('.active').should('contain', 'About')
+    });
+
+    it.skip('find() instead of .filter()', () => {
+        //not working because find() searches by element name
+        cy.get('.traversal-nav>li')
+            .find('.active').should('contain', 'About')
     });
 
     it('.find()', () => {
         cy.get('.traversal-pagination').find('li').find('a').should('have.length', 7)
     });
+
+    it.skip('filter instead of .find()', () => {
+        //not working because filter() not search by webelement name 
+        cy.get('.traversal-pagination').filter('li').filter('a').should('have.length', 7)
+    });
+
 
     it('.first()', () => {
         cy.get('.traversal-table td')
