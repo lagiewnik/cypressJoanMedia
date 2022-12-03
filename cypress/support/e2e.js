@@ -21,6 +21,7 @@ import './commands';
 import './api-commands';
 import 'cypress-mochawesome-reporter/register';
 import '@cypress/grep';
+import 'cypress-plugin-api';
 // const registerCypressGrep = require('@cypress/grep');
 // registerCypressGrep();
 

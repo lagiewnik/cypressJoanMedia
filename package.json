@@ -32,6 +32,7 @@
     "@applitools/eyes-cypress": "^3.27.8",
     "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
     "cypress": "^10.11.0",
+    "cypress-plugin-api": "^2.6.1",
     "esbuild": "^0.15.14"
   },
   "devDependencies": {

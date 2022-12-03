@@ -36,3 +36,9 @@ Wyłaczyć wczesniej mochawesome reports!
 
 ## cucumber with cypress 10
 https://blog.emumba.com/getting-started-with-cypress-10-and-cucumber-6b43ff68633b
+
+## tasks()
+https://docs.cypress.io/api/commands/task#Syntax
+
+## cypress API plugin:
+https://github.com/filiphric/cypress-plugin-api
