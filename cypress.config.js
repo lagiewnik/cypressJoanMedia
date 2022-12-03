@@ -21,7 +21,9 @@ module.exports = defineConfig({
   },
   env: {
     //externalAPI: 'https://jsonplaceholder.cypress.io/' //
-    externalAPI: 'https://jsonplaceholder.typicode.com/'
+    externalAPI: 'https://jsonplaceholder.typicode.com/',
+    snapshotOnly: true,
+    requestMode: true
   },
   e2e: {
     baseUrl: "http://localhost:3000",
