@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Dec 02 15:06:32 CET 2022","Fri Dec 02 15:06:35 CET 2022","3841","","Custom Commands example","","","","Success Login",""
+"passed","Fri Dec 02 15:06:35 CET 2022","Fri Dec 02 15:06:37 CET 2022","1644","","Custom Commands example","","","","Failed Login",""
