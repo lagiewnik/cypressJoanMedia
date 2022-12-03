@@ -14,9 +14,12 @@
     "cypress:API": "cypress run --spec cypress/e2e/API/*cy.js",
     "cypress:todos": "npm run cypress:API",
     "cypress:runChrome": "cypress run --browser chrome --spec cypress/e2e/pom/TC*cy.js",
-    "cypress:runFirefox": "cypress run --browser firefox --spec cypress/e2e/TC07*cy.js",
+    "cypress:runFirefox": "cypress run --browser firefox --spec cypress/e2e/TC07*cy.js --config baseUrl=https://saucedemo.com",
     "cypress:dashboard": "cypress run --browser chrome --record --key 0c2d15e6-a689-4912-9d19-40dafbb50706 --spec cypress/e2e/pom/TC*cy.js",
-    "cypress:cucumber": "cypress run --spec cypress/e2e/cucumber/features/*.feature --config baseUrl=https://www.saucedemo.com/"
+    "cypress:cucumber": "cypress run --spec cypress/e2e/cucumber/features/*.feature --config baseUrl=https://www.saucedemo.com/",
+    "cypress:allure:report": "cypress run --spec cypress/e2e/TC07*cy.js --config baseUrl=https://saucedemo.com --env allure=true",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,7 @@
   "dependencies": {
     "@applitools/eyes-cypress": "^3.27.8",
     "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
+    "allure-commandline": "^2.20.1",
     "cypress": "^10.11.0",
     "cypress-plugin-api": "^2.6.1",
     "esbuild": "^0.15.14"
@@ -39,9 +43,11 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@cypress/grep": "^3.1.0",
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
     "cypress-grep": "^3.0.4",
     "cypress-mochawesome-reporter": "^3.2.3",
     "mysql": "^2.18.1",
+    "playwright-webkit": "^1.28.1",
     "typescript": "^4.9.3"
   },
   "cypress-cucumber-preprocessor": {

@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
 const createEsBuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
@@ -9,6 +10,7 @@ module.exports = defineConfig({
   "chromeWebSecurity": false,
   "experimentalStudio": true,
   "screenshotOnRunFailure": true,
+  experimentalWebKitSupport: true,
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
@@ -26,6 +28,7 @@ module.exports = defineConfig({
     async setupNodeEvents(on, config) {
       const bundler = createBundler({ plugins: [createEsBuildPlugin(config)], });
       on('file:preprocessor', bundler);
+      allureWriter(on, config);
       await addCucumberPreprocessorPlugin(on, config);
       // implement node event listeners here
       require('cypress-mochawesome-reporter/plugin')(on);

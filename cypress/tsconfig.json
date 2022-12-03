@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2015",
     "lib": ["es5", "dom"],
-    "types": ["cypress", "node","cypress-plugin-api"]
+    "types": ["cypress", "node","@shelex/cypress-allure-plugin","cypress-plugin-api"]
   },
   "include": ["**/*.ts"]
 }
