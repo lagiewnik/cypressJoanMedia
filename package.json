@@ -35,8 +35,10 @@
     "@applitools/eyes-cypress": "^3.27.8",
     "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
     "allure-commandline": "^2.20.1",
+    "chai": "^4.3.7",
     "cypress": "^10.11.0",
     "cypress-plugin-api": "^2.6.1",
+    "cypress-real-events": "^1.7.6",
     "esbuild": "^0.15.14"
   },
   "devDependencies": {
