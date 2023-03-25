@@ -1,3 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Dec 02 15:06:32 CET 2022","Fri Dec 02 15:06:35 CET 2022","3841","","Custom Commands example","","","","Success Login",""
-"passed","Fri Dec 02 15:06:35 CET 2022","Fri Dec 02 15:06:37 CET 2022","1644","","Custom Commands example","","","","Failed Login",""
+"passed","Sun Feb 05 13:13:33 CET 2023","Sun Feb 05 13:13:34 CET 2023","1072","","Custom Commands example","","","","Failed Login",""
+"passed","Sun Feb 05 13:13:29 CET 2023","Sun Feb 05 13:13:32 CET 2023","3083","","Custom Commands example","","","","Success Login",""
+"failed","Fri Jan 27 14:17:19 CET 2023","Fri Jan 27 14:17:19 CET 2023","197","","","","","","An uncaught error was detected outside of a test",""

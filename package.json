@@ -32,25 +32,25 @@
   },
   "homepage": "https://github.com/lagiewnik/cypressJoanMedia#readme",
   "dependencies": {
-    "@applitools/eyes-cypress": "^3.27.8",
-    "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
-    "allure-commandline": "^2.20.1",
+    "@applitools/eyes-cypress": "^3.30.1",
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.5",
+    "allure-commandline": "^2.21.0",
     "chai": "^4.3.7",
-    "cypress": "^10.11.0",
-    "cypress-plugin-api": "^2.6.1",
+    "cypress": "^12.8.1",
+    "cypress-plugin-api": "^2.11.0",
     "cypress-real-events": "^1.7.6",
-    "esbuild": "^0.15.14"
+    "esbuild": "^0.17.13"
   },
   "devDependencies": {
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "@cypress/grep": "^3.1.0",
-    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
-    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cypress/grep": "^3.1.5",
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "@shelex/cypress-allure-plugin": "^2.37.0",
     "cypress-grep": "^3.0.4",
-    "cypress-mochawesome-reporter": "^3.2.3",
+    "cypress-mochawesome-reporter": "^3.3.0",
     "mysql": "^2.18.1",
-    "playwright-webkit": "^1.28.1",
-    "typescript": "^4.9.3"
+    "playwright-webkit": "^1.32.1",
+    "typescript": "^5.0.2"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": "cypress/e2e/cucumber/**/*.{js,ts}",

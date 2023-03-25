@@ -1,1 +1,1 @@
-{"total":2,"items":[]}
+{"total":3,"items":[{"uid":"7f122f9eab7ec338c5c3412c45e84b19","name":"This is epic","statistic":{"failed":1,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":1}},{"uid":"0f371a99f1bfa9384430be410c739abc","name":"Feature: Login Succesfull","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"708d10305b08b0a3433f720c3e8ff9dc","name":"Feature: Login Failed","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

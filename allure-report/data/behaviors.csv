@@ -1,2 +1,4 @@
 "Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","","","0","0","2","0","0"
+"","Feature: Login Failed","","0","0","1","0","0"
+"","Feature: Login Succesfull","","0","0","1","0","0"
+"This is epic","This is our feature","","1","0","0","0","0"
