@@ -19,7 +19,9 @@
     "cypress:cucumber": "cypress run --spec cypress/e2e/cucumber/features/*.feature --config baseUrl=https://www.saucedemo.com/",
     "cypress:allure:report": "cypress run --spec cypress/e2e/TC07*cy.js --config baseUrl=https://saucedemo.com --env allure=true",
     "allure:report": "allure generate allure-results --clean -o allure-report",
-    "allure:open": "allure open"
+    "allure:open": "allure open",
+    "run:local": "cypress open --env version=local",
+    "run:prod": "cypress open --env version=prod"
   },
   "repository": {
     "type": "git",

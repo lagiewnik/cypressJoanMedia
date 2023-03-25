@@ -58,7 +58,9 @@ module.exports = defineConfig({
           return href
         },
       });
-
+      const version = config.env.version || "local";
+      config.env = require(`./cypress/config/${version}.json`)
+      config.baseUrl = config.env.baseUrl;
       return config;
     },
     specPattern: ['cypress/e2e/**/*.feature', 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}']
